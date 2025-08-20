@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamia Jahan Jui | CIO at UNLEFT LLC</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/lamia.css">
+</head>
+<body>
+    <!-- Loading animation -->
+    <div class="loader">
+        <div class="loader-spinner"></div>
+        <div class="loader-text">Initializing portfolio...</div>
+    </div>
+
+    <!-- Theme toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-bg"></div>
+        <div class="particles" id="particles"></div>
+        <div class="header-content">
+            <div class="logo"><span>Jui</span>><span class="cursor"></span></div>
+            <h1 class="title">Lamia Jahan Jui</h1>
+            <h2 class="subtitle">CIO at UNLEFT LLC</h2>
+            <p>Database Enthusiast | Software Engineering Student | Creative Problem Solver</p>
+            <a href="#contact" class="contact-btn">Get In Touch</a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo"><span>Jui</span></a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="container">
+        <!-- About section -->
+        <section id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I am a passionate Software Engineering student with a strong interest in database systems, software development, and innovative technology solutions. I enjoy combining analytical thinking with creative design to create structured, efficient, and user-friendly systems.</p>
+                    <p>My ability to manage information, adapt to new technologies, and present ideas effectively makes me a valuable contributor to any team or project.</p>
+                    
+                    <div class="code-terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-btn red"></div>
+                            <div class="terminal-btn yellow"></div>
+                            <div class="terminal-btn green"></div>
+                            <div class="terminal-title">lamia-jui --profile</div>
+                        </div>
+                        <div class="terminal-body">
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$></span>
+                                <span class="terminal-command">cat about.txt</span>
+                            </div>
+                            <div class="terminal-output">
+                                Passionate Software Engineer with expertise in database systems<br>
+                                and full-stack development. Currently pursuing B.Sc. in<br>
+                                Software Engineering at Daffodil International University.
+                            </div>
+                            <div class="terminal-line">
+                                <span class="terminal-prompt">$></span>
+                                <span class="terminal-command">ls skills/</span>
+                            </div>
+                            <div class="terminal-output">
+                                Database Design  Problem Solving  Software Development<br>
+                                Team Collaboration  Creative Visualization
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Lamia Jahan Jui">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Database Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>SQL (SELECT, INSERT, UPDATE, DELETE)</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>ER Diagrams & Normalization</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PostgreSQL</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML/CSS</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Git/GitHub/GitLab</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>VS Code & PyCharm</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>Firebase & Google Cloud</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience section -->
+        <section id="experience">
+            <h2 class="section-title">Education & Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>CIO at UNLEFT LLC</h3>
+                        <div class="timeline-date">2023 - Present</div>
+                        <p>Leading the technical vision and strategy for UNLEFT LLC, overseeing database architecture and software development projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>B.Sc. in Software Engineering</h3>
+                        <div class="timeline-date">Daffodil International University</div>
+                        <p>Currently pursuing my degree with a focus on database systems and software architecture.</p>
+                    </div>
+                </div>
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>AI Training & Database Projects</h3>
+                        <div class="timeline-date">2022 - 2023</div>
+                        <p>Worked on various projects involving artificial intelligence training and database management systems.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Database Enthusiast</h3>
+                        <div class="timeline-date">Since 2021</div>
+                        <p>Developed a strong passion for database design and management, working on personal and academic projects.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects">
+            <h2 class="section-title">Projects & Key Strengths</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/unleft.png" alt="Database Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>Unleft.LLC</h3>
+                        <p>Designed and implemented a relational database system with optimized queries and normalization techniques.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">ER Diagrams</span>
+                            <span class="project-tag">Normalization</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/eduplex.png" alt="AI Training Project">
+                    </div>
+                    <div class="project-info">
+                        <h3>EduPlex</h3>
+                        <p>Helped to create an All in One website for study purpose for the students of 45th batch of Software engineering batch of DIU by organizing and gathering the resources.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">TensorFlow</span>
+                            <span class="project-tag">Data Pipelines</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="images/mrbike.png" alt="Web Application">
+                    </div>
+                    <div class="project-info">
+                        <h3>MrBike</h3>
+                        <p>Supervised the backend part of the Bangladesh's most popular bike information website</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> View Project</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-container" style="margin-top: 3rem;">
+                <div class="skill-category">
+                    <h3><i class="fas fa-star"></i> Key Strengths</h3>
+                    <ul style="list-style-type: none;">
+                        <li style="margin-bottom: 1rem; position: relative; padding-left: 1.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent); position: absolute; left: 0;"></i>
+                            Data Organization Expertise – Capable of designing structured data systems and ensuring data accuracy
+                        </li>
+                        <li style="margin-bottom: 1rem; position: relative; padding-left: 1.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent); position: absolute; left: 0;"></i>
+                            Creative Integration of Technology – Blends technical knowledge with design skills for impactful solutions
+                        </li>
+                        <li style="margin-bottom: 1rem; position: relative; padding-left: 1.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent); position: absolute; left: 0;"></i>
+                            Detail-Oriented & Analytical – Ensures clarity, efficiency, and accuracy in all tasks
+                        </li>
+                        <li style="margin-bottom: 1rem; position: relative; padding-left: 1.5rem;">
+                            <i class="fas fa-check" style="color: var(--accent); position: absolute; left: 0;"></i>
+                            Fast Learner – Quickly adapts to new software tools, frameworks, and technologies
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-user-tie"></i> Soft Skills</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                        <span style="background-color: rgba(110, 72, 170, 0.2); color: var(--accent); padding: 0.5rem 1rem; border-radius: 20px;">Effective Communication</span>
+                        <span style="background-color: rgba(110, 72, 170, 0.2); color: var(--accent); padding: 0.5rem 1rem; border-radius: 20px;">Time Management</span>
+                        <span style="background-color: rgba(110, 72, 170, 0.2); color: var(--accent); padding: 0.5rem 1rem; border-radius: 20px;">Problem Solving</span>
+                        <span style="background-color: rgba(110, 72, 170, 0.2); color: var(--accent); padding: 0.5rem 1rem; border-radius: 20px;">Adaptability</span>
+                        <span style="background-color: rgba(110, 72, 170, 0.2); color: var(--accent); padding: 0.5rem 1rem; border-radius: 20px;">Team Collaboration</span>
+                        <span style="background-color: rgba(110, 72, 170, 0.2); color: var(--accent); padding: 0.5rem 1rem; border-radius: 20px;">Creative Thinking</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <a href="mailto:lamia.cio@unleft.space">lamia.cio@unleft.space</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Position</h3>
+                            <p>Chief Information Officer at UNLEFT LLC</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Education</h3>
+                            <p>B.Sc. in Software Engineering<br>Daffodil International University</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Technologies</h3>
+                            <p>HTML, Python, SQL, PostgreSQL, Git, VS Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">© 2023 Lamia Jahan Jui. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="js/lamia.js"></script>
+</body>
+</html>

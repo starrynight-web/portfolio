@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Md. Al Imran — Portfolio</title>
+  <meta name="description" content="Md. Al Imran | SWE Fresher Portfolio" />
+
+  <!-- Icons & Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <link rel="stylesheet" href="css/imran.css">
+</head>
+<body>
+  <!-- ===== NAV ===== -->
+  <header>
+    <div class="container nav">
+      <div class="brand reveal show">
+        <div class="logo">AI</div>
+        <span>Md. Al Imran</span>
+      </div>
+      <nav class="reveal show">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta reveal show">
+        <a class="btn ghost" href="#contact"><i class="fa-regular fa-paper-plane"></i> Hire me</a>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="container hero">
+    <div class="reveal">
+      <span class="badge"><i class="fa-solid fa-code"></i> SWE Fresher • Flutter Enthusiast</span>
+      <h1 class="hello">Hi, I'm <span style="background:linear-gradient(90deg,var(--primary),var(--accent)); -webkit-background-clip:text; background-clip:text; color:transparent;">Md. Al Imran</span>.</h1>
+      <p class="subtitle">
+        I build clean, fast, and accessible web & mobile experiences. Passionate about education tech, tooling, and delightful UI micro-interactions.
+      </p>
+      <div class="cta">
+        <a class="btn" href="#" download><i class="fa-solid fa-file-arrow-down"></i> Download Résumé</a>
+        <a class="btn ghost" href="#projects"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+      </div>
+    </div>
+    <aside class="reveal">
+      <div class="avatar"></div>
+      <div class="hero-card" style="margin-top:14px">
+        <strong>Available for:</strong>
+        <div style="display:flex; gap:8px; margin-top:8px; flex-wrap:wrap">
+          <span class="badge"><i class="fa-solid fa-wand-magic-sparkles"></i> Frontend</span>
+          <span class="badge"><i class="fa-solid fa-mobile-screen"></i> Flutter</span>
+          <span class="badge"><i class="fa-solid fa-database"></i> PHP + SQLite</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container grid cols-2">
+      <div class="card reveal">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          I'm a Software Engineering student who loves turning ideas into real, usable products.
+          Recently I’ve been building a temporary file-sharing web app with PHP & SQLite (50MB cap, OTP-style password).
+          I care about clean code, good UX, and speed.
+        </p>
+        <p>
+          <strong>Goals (2025):</strong> Ship 3 polished projects, contribute to open-source, and get an entry-level SWE role.
+        </p>
+        <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:6px">
+          <a class="btn ghost" href="mailto:hello@example.com"><i class="fa-regular fa-envelope"></i> Email</a>
+          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+      <div class="card reveal">
+        <h2 class="section-title">Quick Facts</h2>
+        <ul style="margin:0; padding-left:18px; line-height:1.9">
+          <li>Based in Dhaka, Bangladesh 🇧🇩</li>
+          <li>Love: Flutter, Tailwind vibes, neat CSS tricks</li>
+          <li>Learning: DS & Algos, REST APIs, SQL schema design</li>
+          <li>Soft skills: Teamwork, documentation, teaching peers</li>
+          <li>Hobbies: Writing notes, UI polish, football highlights</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
+      <div class="grid cols-3">
+        <div class="card reveal">
+          <div class="chip badge"><i class="fa-solid fa-laptop-code"></i> Frontend</div>
+          <div class="skill"><span>HTML/CSS</span><span>Advanced</span></div>
+          <div class="bar"><span data-w="92"></span></div>
+          <div class="skill"><span>JavaScript</span><span>Intermediate</span></div>
+          <div class="bar"><span data-w="78"></span></div>
+          <div class="skill"><span>Responsive/UX</span><span>Advanced</span></div>
+          <div class="bar"><span data-w="90"></span></div>
+        </div>
+
+        <div class="card reveal">
+          <div class="chip badge"><i class="fa-solid fa-mobile-screen"></i> Mobile</div>
+          <div class="skill"><span>Flutter</span><span>Intermediate</span></div>
+          <div class="bar"><span data-w="75"></span></div>
+          <div class="skill"><span>Dart</span><span>Intermediate</span></div>
+          <div class="bar"><span data-w="72"></span></div>
+          <div class="skill"><span>UI Animations</span><span>Good</span></div>
+          <div class="bar"><span data-w="80"></span></div>
+        </div>
+
+        <div class="card reveal">
+          <div class="chip badge"><i class="fa-solid fa-database"></i> Backend</div>
+          <div class="skill"><span>PHP</span><span>Intermediate</span></div>
+          <div class="bar"><span data-w="70"></span></div>
+          <div class="skill"><span>SQLite / MySQL</span><span>Intermediate</span></div>
+          <div class="bar"><span data-w="68"></span></div>
+          <div class="skill"><span>REST Basics</span><span>Learning</span></div>
+          <div class="bar"><span data-w="55"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+      <div class="grid cols-3">
+        <!-- Project 1 -->
+        <article class="card reveal">
+          <div class="project-thumb"></div>
+          <h3>TempShare — PHP+SQLite</h3>
+          <p>Temporary file sharing (up to 50MB) with 3-digit password & expiry selection (1–30 mins). Clean UI & no direct link exposure.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            <a class="btn" href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+        <!-- Project 2 -->
+        <article class="card reveal">
+          <div class="project-thumb"></div>
+          <h3>EduPlex — Study Hub</h3>
+          <p>Batch-45 resource hub with CGPA tools, past questions and smooth micro-interactions for better focus & speed.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            <a class="btn" href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+        <!-- Project 3 -->
+        <article class="card reveal">
+          <div class="project-thumb"></div>
+          <h3>Flutter Notes</h3>
+          <p>Minimal notes app with local persistence, smooth page transitions and keyboard-friendly UX.</p>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <a class="btn ghost" href="#" target="_blank"><i class="fa-brands fa-github"></i> Code</a>
+            <a class="btn" href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TIMELINE ===== -->
+  <section id="timeline">
+    <div class="container">
+      <h2 class="section-title reveal">Journey</h2>
+      <div class="card reveal">
+        <div class="timeline">
+          <div class="t-item">
+            <h3>2025 — SWE Fresher</h3>
+            <p>Building portfolio projects, learning DS & Algos, and contributing to study tools.</p>
+          </div>
+          <div class="t-item">
+            <h3>2024 — EduPlex</h3>
+            <p>Launched student-run platform to centralize materials, questions, and calculators.</p>
+          </div>
+          <div class="t-item">
+            <h3>2023 — First lines of code</h3>
+            <p>Started coding, fell in love with frontend & delightful UI nuances.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container grid cols-2">
+      <div class="card reveal">
+        <h2 class="section-title">Let’s Talk</h2>
+        <p>Have an idea, internship, or collaboration in mind? Send a message—I'll get back fast.</p>
+        <form id="contactForm" novalidate>
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+          <div style="display:flex; gap:10px; flex-wrap:wrap">
+            <button class="btn" type="submit"><i class="fa-regular fa-paper-plane"></i> Send</button>
+            <button class="btn ghost" type="reset"><i class="fa-solid fa-rotate-right"></i> Reset</button>
+          </div>
+          <small id="formStatus" style="color:var(--muted)"></small>
+        </form>
+      </div>
+      <div class="card reveal">
+        <h2 class="section-title">Links</h2>
+        <div class="links">
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+          <a href="mailto:hello@example.com"><i class="fa-regular fa-envelope"></i> Email</a>
+        </div>
+        <div class="hero-card" style="margin-top:18px">
+          <strong>Resume:</strong>
+          <p style="margin:.4rem 0 0">Keep it to 1 page, quantify achievements, link live demos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container" style="display:flex; justify-content:space-between; gap:16px; align-items:center; flex-wrap:wrap">
+      <p>© <span id="year"></span> Md. Al Imran. All rights reserved.</p>
+      <div class="links">
+        <a href="#about">About</a> •
+        <a href="#projects">Projects</a> •
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/imran.js"></script>
+</body>
+</html>
