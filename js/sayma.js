@@ -300,32 +300,6 @@
             }
         });
         
-        // Theme Switch
-        const themeBtns = document.querySelectorAll('.theme-btn');
-        
-        themeBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                const theme = btn.getAttribute('data-theme');
-                
-                // Update active button
-                themeBtns.forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                // Set theme
-                document.body.classList.toggle('light-theme', theme === 'light');
-                
-                // Save theme preference
-                localStorage.setItem('portfolio-theme', theme);
-            });
-        });
-        
-        // Check for saved theme preference
-        const savedTheme = localStorage.getItem('portfolio-theme') || 'dark';
-        document.body.classList.toggle('light-theme', savedTheme === 'light');
-        themeBtns.forEach(btn => {
-            btn.classList.toggle('active', btn.getAttribute('data-theme') === savedTheme);
-        });
-        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {

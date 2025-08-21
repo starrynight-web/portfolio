@@ -259,48 +259,6 @@
             color: white;
         }
 
-        /* Theme Switch */
-        .theme-switch {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            background: var(--card-bg);
-            backdrop-filter: blur(var(--glass-blur));
-            padding: 8px;
-            border-radius: 50px;
-            border: var(--glass-border);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        .theme-btn {
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: transparent;
-            border: none;
-            color: var(--light);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            font-size: 1rem;
-        }
-
-        .theme-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .theme-btn.active {
-            background: var(--primary);
-            color: white;
-            box-shadow: 0 0 10px rgba(110, 0, 255, 0.5);
-        }
-
         /* Header Styles */
         header {
             position: fixed;
@@ -395,7 +353,7 @@
 
         /* Hero Section */
         .hero {
-            min-height: 90vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -445,8 +403,7 @@
             flex: 1;
             position: relative;
             perspective: 1000px;
-            margin-top: 110px;
-            /* max-height: 500px; */
+            margin-top: 70px;
             max-width: 500px;
         }
 
@@ -458,11 +415,7 @@
             transform-style: preserve-3d;
             transition: transform 1s ease;
         }
-
-        .hero-image-container:hover {
-            transform: rotateY(10deg) rotateX(5deg);
-        }
-
+        
         .hero-image-container img {
             position: absolute;
             top: 0;
@@ -500,14 +453,6 @@
             border: 2px solid var(--secondary);
             opacity: 0.5;
             transform: translateZ(-20px);
-        }
-
-        .hero-image-container:hover::before {
-            transform: translateZ(-10px) rotateY(-5deg) rotateX(-5deg);
-        }
-
-        .hero-image-container:hover::after {
-            transform: translateZ(-20px) rotateY(5deg) rotateX(5deg);
         }
 
         .hero-description {
